@@ -1,0 +1,35 @@
+# =========================================================
+# iCONI Agency — robots.txt
+# Allows all crawlers, points to sitemap
+# =========================================================
+
+User-agent: *
+Allow: /
+
+# Block admin / internal paths if you add any later
+Disallow: /admin/
+Disallow: /partials/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://iconi.in/sitemap.xml
+
+# Crawl-delay for aggressive bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+# Allow major search engines with no delay
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
